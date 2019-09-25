@@ -6,12 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="../../utils/reset.css" />
+    <style>
+      .list {
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+      }
+      .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .list div {
+        display: none;
+      }
+      .list .tab {
+        display: block;
+        float: left;
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .tab:active,
+      .tab:hover {
+        color: red;
+      }
+      .list .content:target {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        border: 1px solid blue;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-      <li>asd</li>
-      <li>dfg</li>
-      <li>s</li>
-    </ul>
+    <div class="list clearfix">
+      <a href="#q1" class="tab">tab1</a>
+      <div id="q1" class="content">tab1 content</div>
+
+      <a href="#q2" class="tab">tab2</a>
+      <div id="q2" class="content">tab2 content</div>
+    </div>
   </body>
 </html>
