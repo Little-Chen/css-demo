@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../utils/reset.css" />
+    <style>
+      .wrap {
+        width: 150px;
+        margin: 0 auto;
+      }
+      .select-input {
+        width: 150px;
+      }
+      .select-input:focus {
+        background: yellow;
+        color: red;
+      }
+      .select-list {
+        display: none;
+      }
+      .select-option {
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .select-input:focus + .select-list {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <input class="select-input" placeholder="请选择" />
+      <ul class="select-list">
+        <li class="select-option">北京</li>
+        <li class="select-option">上海</li>
+        <li class="select-option">合肥</li>
+      </ul>
+    </div>
+  </body>
+</html>
