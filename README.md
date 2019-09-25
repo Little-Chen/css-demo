@@ -11,3 +11,5 @@
    > 缺点：因为锚点会将选中的元素滚动到页面最上面，每次切换位置都要移动，体验极差。
 
 [参考文章]https://segmentfault.com/a/1190000013797371?utm_source=tag-newest
+
+3. 使用纯 css 实现 select 框
